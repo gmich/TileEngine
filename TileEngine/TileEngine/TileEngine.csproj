@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{92DFAE00-E6CD-4EEB-A34C-0CD2C0CAD7F0}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TileEngine</RootNamespace>
+    <AssemblyName>TileEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>f3379897-fb02-413a-a570-ce58fdcc15a8</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\Lidgren\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network.Xna">
+      <HintPath>..\Lidgren\Lidgren.Network.Xna.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\CircularAnimation.cs" />
+    <Compile Include="Animations\PointingAnimation.cs" />
+    <Compile Include="Animations\IAnimation.cs" />
+    <Compile Include="Animations\LoadingAnimation.cs" />
+    <Compile Include="Banner\LobbyBanner.cs" />
+    <Compile Include="Banner\MenuBanner.cs" />
+    <Compile Include="Banner\IBanner.cs" />
+    <Compile Include="Banner\GameBanner.cs" />
+    <Compile Include="Banner\ScoreBanner.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Entities\GameComponents\LargeSoldier.cs" />
+    <Compile Include="Entities\MenuComponents\ColorButton.cs" />
+    <Compile Include="Entities\MenuComponents\CenteredTitle.cs" />
+    <Compile Include="Entities\MenuComponents\TimedTitle.cs" />
+    <Compile Include="Entities\MenuComponents\GameButton.cs" />
+    <Compile Include="Entities\MenuComponents\IButton.cs" />
+    <Compile Include="Entities\GameComponents\LayerComparer.cs" />
+    <Compile Include="Entities\GameComponents\MovingEntity.cs" />
+    <Compile Include="Entities\GameComponents\RotatingEntity.cs" />
+    <Compile Include="Entities\GameComponents\Soldier.cs" />
+    <Compile Include="Entities\GameComponents\Tile.cs" />
+    <Compile Include="Entities\GameComponents\MapSquare.cs" />
+    <Compile Include="Entities\MenuComponents\MenuButton.cs" />
+    <Compile Include="Entities\MenuComponents\ScoreButton.cs" />
+    <Compile Include="Entities\MenuComponents\Title.cs" />
+    <Compile Include="Diagnostics\FPSMonitor.cs" />
+    <Compile Include="GameStates.cs" />
+    <Compile Include="Input\InputManager.cs" />
+    <Compile Include="Input\KeyboardInput.cs" />
+    <Compile Include="Entities\MenuComponents\TextBox.cs" />
+    <Compile Include="Networking\Avatar\Avatar.cs" />
+    <Compile Include="Networking\Avatar\LoadAvatarThread.cs" />
+    <Compile Include="Networking\Avatar\SteamApi.cs" />
+    <Compile Include="Networking\ClientNetworkManager.cs" />
+    <Compile Include="Networking\DNSConverter.cs" />
+    <Compile Include="Networking\EventArgs\BannerArgs.cs" />
+    <Compile Include="Networking\EventArgs\ColorArgs.cs" />
+    <Compile Include="Networking\EventArgs\AnimationArgs.cs" />
+    <Compile Include="Networking\EventArgs\ScoreArgs.cs" />
+    <Compile Include="Networking\EventArgs\RotateEntityArgs.cs" />
+    <Compile Include="Networking\EventArgs\RequestEntityArgs.cs" />
+    <Compile Include="Networking\EventArgs\SignalEntityArgs.cs" />
+    <Compile Include="Networking\EventArgs\PlayArgs.cs" />
+    <Compile Include="Networking\EventArgs\ChangeEntityArgs.cs" />
+    <Compile Include="Networking\EventArgs\TitleArgs.cs" />
+    <Compile Include="Networking\EventArgs\UpdateEntityArgs.cs" />
+    <Compile Include="Networking\INetworkManager.cs" />
+    <Compile Include="Networking\Messages\AddPointingAnimationMessage.cs" />
+    <Compile Include="Networking\Messages\UpdateScoreMessage.cs" />
+    <Compile Include="Networking\Messages\RotateEntityMessage.cs" />
+    <Compile Include="Networking\Messages\RemoveEntityMessage.cs" />
+    <Compile Include="Networking\Messages\GetEntityMessage.cs" />
+    <Compile Include="Networking\Messages\ReleaseTileMessage.cs" />
+    <Compile Include="Networking\Messages\SnapTileMessage.cs" />
+    <Compile Include="Networking\Messages\RequestTileMessage.cs" />
+    <Compile Include="Networking\Messages\UpdateEntityMessage.cs" />
+    <Compile Include="Networking\Messages\InGameMessage.cs" />
+    <Compile Include="Networking\Messages\TitleMessage.cs" />
+    <Compile Include="Networking\Messages\PlayerBannerMessage.cs" />
+    <Compile Include="Networking\Messages\PlayerDisconnectedMessage.cs" />
+    <Compile Include="Networking\Messages\ColorSwitchMessage.cs" />
+    <Compile Include="Networking\Messages\AddBannerMessage.cs" />
+    <Compile Include="Networking\Messages\GameMessageTypes.cs" />
+    <Compile Include="Networking\Messages\IGameMessage.cs" />
+    <Compile Include="Networking\Messages\RequestBannerMessage.cs" />
+    <Compile Include="Networking\ServerNetworkManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TileGrid.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

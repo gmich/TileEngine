@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TileEngine", "TileEngine\TileEngine.csproj", "{92DFAE00-E6CD-4EEB-A34C-0CD2C0CAD7F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carcassonne", "Carcassonne\Carcassonne\Carcassonne.csproj", "{E5E1126A-A2A6-4CCB-92BE-D7275A919CC5}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "CarcassonneContent", "Carcassonne\CarcassonneContent\CarcassonneContent.contentproj", "{330C9119-6624-462A-9023-6C73068B2AE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92DFAE00-E6CD-4EEB-A34C-0CD2C0CAD7F0}.Debug|x86.ActiveCfg = Debug|x86
+		{92DFAE00-E6CD-4EEB-A34C-0CD2C0CAD7F0}.Debug|x86.Build.0 = Debug|x86
+		{92DFAE00-E6CD-4EEB-A34C-0CD2C0CAD7F0}.Release|x86.ActiveCfg = Release|x86
+		{92DFAE00-E6CD-4EEB-A34C-0CD2C0CAD7F0}.Release|x86.Build.0 = Release|x86
+		{E5E1126A-A2A6-4CCB-92BE-D7275A919CC5}.Debug|x86.ActiveCfg = Debug|x86
+		{E5E1126A-A2A6-4CCB-92BE-D7275A919CC5}.Debug|x86.Build.0 = Debug|x86
+		{E5E1126A-A2A6-4CCB-92BE-D7275A919CC5}.Release|x86.ActiveCfg = Release|x86
+		{E5E1126A-A2A6-4CCB-92BE-D7275A919CC5}.Release|x86.Build.0 = Release|x86
+		{330C9119-6624-462A-9023-6C73068B2AE0}.Debug|x86.ActiveCfg = Debug|x86
+		{330C9119-6624-462A-9023-6C73068B2AE0}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
